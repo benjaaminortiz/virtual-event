@@ -16,7 +16,8 @@
 .body{
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 5%;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -31,6 +32,6 @@
 
 .left-content{
   width: 45%;
-
+  max-width: 720px;
   
 }

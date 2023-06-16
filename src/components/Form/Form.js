@@ -106,9 +106,8 @@ const Form = () => {
         </div>
 
         <div className='fo-in' >
-          <p style={{marginLeft: '5%'}}>Pais</p>
+          <p>Pais</p>
           <CountryDropdown
-          className='dropdown'
           value={country}
           onChange={(val) => (setCountry(val), validate())} />
            {errors.country && <span className='fade-in' >{errors.country}</span>}
@@ -118,7 +117,7 @@ const Form = () => {
         <div className='fo-in'>
         <p>Número de celular</p>
           <PhoneInput
-            inputStyle={{ width: '100%' }}
+            inputStyle={{ width: '100%', height: '60px' }}
             containerStyle={{ width: '100%', border: '1px #68737D solid', borderRadius: '5px' }}
             country={'ar'}
             onChange={phone => (setPhoneNum(phone), validate())}

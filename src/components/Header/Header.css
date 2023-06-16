@@ -1,5 +1,7 @@
 .h-main{
     background-image: url('C:\Users\Etc\Documents\Evento-Virtual\virtual-event-client\src\components\Header\header.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: min-content;
     text-align: center;
     padding: 30px 0px;
@@ -18,6 +20,8 @@
 
 .h-content{
     color:#02363D
+    padding 30px;
+    line-height: 30px;
 }
 
 @media( max-width:768px) {
