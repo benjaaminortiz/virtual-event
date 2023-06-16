@@ -1,0 +1,12 @@
+.i-main {
+    font-family: 'Proxima Nova Regular';
+    font-size: 20px;
+    line-height: 28px;
+    color: #405457;
+}
+
+@media (max-width: 480px) {
+    .i-main{
+        text-align: center;
+    }
+}

@@ -1,0 +1,16 @@
+.bubble-wrapper{
+    background-color: #AAAAAA;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bubble-wrapper a img {
+    max-height: 40px;
+   max-width: 40px;
+   display: block;
+   margin: 0;
+}

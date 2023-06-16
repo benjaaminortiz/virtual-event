@@ -1,0 +1,32 @@
+.footer-main{
+     background-color: #F8F9F9;
+     display: flex;
+     justify-content: space-between;
+     align-items: center ;
+     padding: 50px 5%;
+}
+
+
+.s-container span {
+    justify-content: center;
+    font-size: larger;
+  
+}
+.b-container {
+    display: flex;
+    gap: 2rem
+}
+
+@media (max-width: 768px){
+    
+    .footer-main{
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .b-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

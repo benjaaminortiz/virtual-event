@@ -1,0 +1,36 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-wrapper{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.body{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .body{
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-content{
+    width: 95vw !important;
+  }
+}
+
+.left-content{
+  width: 45%;
+
+  
+}

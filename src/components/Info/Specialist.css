@@ -1,0 +1,27 @@
+.spe-main{
+    margin: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.spe-img-wrapper img {
+    height: 80px;
+}
+
+.spe-body h6{
+   margin: auto;
+}
+.spe-body h4{
+    margin: auto;
+ }
+
+@media (max-width: 480px) {
+    .spe-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .spe-body{
+        text-align: center;
+    }
+}
