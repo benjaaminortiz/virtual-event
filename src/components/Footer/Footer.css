@@ -10,7 +10,8 @@
 .s-container span {
     justify-content: center;
     font-size: larger;
-  
+    font-family: 'Proxima Nova Regular';
+    
 }
 .b-container {
     display: flex;
