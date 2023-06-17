@@ -16,8 +16,10 @@ function App() {
           <Info />
           <Logos />
         </div>
-
+        <div className='form-wrapper'>
         <Form />
+        </div>
+     
       </div>
       <div className='footer-wrapper'>
         <Footer />

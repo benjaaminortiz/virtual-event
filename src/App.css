@@ -8,6 +8,7 @@
 }
 
 .footer-wrapper{
+  
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -20,6 +21,17 @@
   justify-content: center;
 }
 
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
   .body{
     flex-direction: column;
@@ -28,10 +40,26 @@
   .left-content{
     width: 95vw !important;
   }
+  .form-wrapper{
+    width: 90% !important;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px){
+
 }
 
 .left-content{
+  
+  animation: fadeInFromBottom 0.5s ease-in-out;
   width: 45%;
   max-width: 720px;
   
+}
+
+.form-wrapper {
+  animation: fadeInFromBottom 0.8s ease-in-out;
+  width: 45%;
+  max-width: 720px;
+
 }
