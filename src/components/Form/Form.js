@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import axios from 'axios';
 import './Form.css'
 import PhoneInput from 'react-phone-input-2'
@@ -67,19 +67,19 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     validate();
-    // axios({
-    //   method: 'post',
-    //   url: 'http://localhost:5000/',
-    //   data:{
-    //     name,
-    //     lastName,
-    //     email,
-    //     country,
-    //     phoneNum,
-    //     role
-    //   }
-    // }).then(alert("datos ingresados!"));
-    alert("Datos Ingresados:", name, lastName, email, country, phoneNum, role )
+    axios({
+      method: 'post',
+      url: 'https://virtual-event-server.onrender.com/',
+      data:{
+        name,
+        lastName,
+        email,
+        country,
+        phoneNum,
+        role
+      }
+    }).then(alert("datos ingresados!"));
+   
   }  
 
   return (
