@@ -67,18 +67,19 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     validate();
-    axios({
-      method: 'post',
-      url: 'http://localhost:5000/',
-      data:{
-        name,
-        lastName,
-        email,
-        country,
-        phoneNum,
-        role
-      }
-    }).then(console.log('Sent to DB'));
+    // axios({
+    //   method: 'post',
+    //   url: 'http://localhost:5000/',
+    //   data:{
+    //     name,
+    //     lastName,
+    //     email,
+    //     country,
+    //     phoneNum,
+    //     role
+    //   }
+    // }).then(alert("datos ingresados!"));
+    alert("Datos Ingresados:", name, lastName, email, country, phoneNum, role )
   }  
 
   return (
@@ -110,6 +111,9 @@ const Form = () => {
           <CountryDropdown
           value={country}
           onChange={(val) => (setCountry(val), validate())} />
+          <span className="material-symbols-outlined">
+          expand_more
+          </span>
            {errors.country && <span className='fade-in' >{errors.country}</span>}
           </div>
         
@@ -117,7 +121,8 @@ const Form = () => {
         <div className='fo-in'>
         <p>Número de celular</p>
           <PhoneInput
-            inputStyle={{ width: '100%', height: '60px' }}
+          buttonStyle={{border: 'none', marginLeft: '2px', background: '#ffffff'}}
+            inputStyle={{ width: '100%',border: 'none', height: '60px', fontSize: 'larger' }}
             containerStyle={{ width: '100%', border: '1px #68737D solid', borderRadius: '5px' }}
             country={'ar'}
             onChange={phone => (setPhoneNum(phone), validate())}
