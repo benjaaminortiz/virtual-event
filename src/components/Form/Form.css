@@ -59,10 +59,11 @@
 }
 
 .fo-in {
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
-  width: 90%
+  width: 90%;
+
 }
 
 .fo-in input {
@@ -89,28 +90,32 @@
 
 
 
-@keyframes fadeIn {
-  from {
+
+@keyframes desplegar {
+  0% {
     opacity: 0;
+    max-height: 0;
   }
-
-  to {
+  100% {
     opacity: 1;
-  }
-}
-
+    max-height: 50px;
+    
+}}
 .fade-in {
-  animation: fadeIn 0.8s ease;
-  font-weight: 600;
+  
   color: red;
   background-color: rgba(255, 0, 0, 0.3);
-  padding: 5px;
+  padding: 10px 5px 15px 5px;
   border-radius: 0 0 10px 10px;
 
+  display: inline-flex;
+  overflow:visible ;
+  animation: desplegar 0.4s ease-out forwards;
 }
 .material-symbols-outlined{
   position: relative;
   left: 90%;
+  height: 0px;
   pointer-events: none;
   width: min-content;
   bottom: 40px;
@@ -120,4 +125,5 @@
   .material-symbols-outlined{
     left: 85%;
   }
+
 }

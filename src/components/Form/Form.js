@@ -103,15 +103,15 @@ const Form = () => {
           <p>E-Mail del trabajo</p>
           <input name='email'
             onChange={e => (setEmail(e.target.value), validate())} />
-          {errors.email && <span className='fade-in' >{errors.email}</span>}
+          {errors.email && <span style={{height: '100px'}} className='fade-in' >{errors.email}</span>}
         </div>
 
-        <div className='fo-in' >
+        <div className='fo-in'  >
           <p>Pais</p>
           <CountryDropdown
           value={country}
           onChange={(val) => (setCountry(val), validate())} />
-          <span className="material-symbols-outlined">
+          <span style={{marginBottom: '0px'}} className="material-symbols-outlined">
           expand_more
           </span>
            {errors.country && <span className='fade-in' >{errors.country}</span>}
