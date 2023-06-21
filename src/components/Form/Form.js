@@ -9,6 +9,7 @@ const Form = () => {
 
   var [disabledValue, setDisabled] = useState(true)
   const [errors, setErrors] = useState({});
+  const [bannerIsVisible, setBannerIsVisible] = useState(false);
 
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -78,12 +79,19 @@ const Form = () => {
         phoneNum,
         role
       }
-    }).then(alert("datos ingresados!"));
+    }).then(setBannerIsVisible(true)
+    ); 
+    
+    setTimeout(() => {
+      setBannerIsVisible(false);
+    }, 5000);
+  };
    
-  }  
+  
 
   return (
     <>
+   {bannerIsVisible && <span className='banner'>Formulario Enviado!</span>}
       <form className='form-main' onSubmit={handleSubmit}>
         <div className='fo-in'>
           <p>Nombre</p>
